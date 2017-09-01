@@ -8,12 +8,12 @@ RXX N1 N2 VALUE
 N1 and N2 are the two element nodes. VALUE is the resistance (in ohms) and may be positive or negative but not zero.
 
 Capacitors
- CXX N+ N- VALUE
+CXX N+ N- VALUE
 N+ and N- are the positive and negative element nodes, respectively. VALUE is the capacitance in Farads.
 
 Inductors
 LXX N+ N- VALUE
-N+ and N- are the positive and negative element nodes, respectively. VALUE is the inductance in henries.
+N+ and N- are the positive and negative element nodes, respectively. VALUE is the inductance in Henries.
 
 Independent Sources
 VXX N+ N- VALUE
@@ -38,7 +38,7 @@ VNAM is the name of a voltage source through which the controlling current flows
 VALUE is the transresistance (in ohms).
 
 Coupled (Mutual) Inductors (not currently supported)
- KXX LYY LZZ VALUE
+KXX LYY LZZ VALUE
 LYY and LZZ are the names of the two coupled inductors.
 VALUE is the coefficient of coupling, K, which must be in the range −1 ≤ K ≤ +1. Using the 'dot' convention, place a 'dot' on the first node of each inductor.
 

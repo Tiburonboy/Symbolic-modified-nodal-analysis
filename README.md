@@ -1,7 +1,7 @@
 # Node-Analysis
 This notebook contains some python code to read a netlist formatted similar to a SPICE file and generate the node equations.  Nodal analysis is described [here](https://en.wikipedia.org/wiki/Modified_nodal_analysis).  Follows Erik Cheever's Analysis of  Resistive Circuits [page](http://www.swarthmore.edu/NatSci/echeeve1/Ref/mna/MNA1.html) to generate modified nodal equations.  I somewhat followed his matlab file.  
 
-The following elements are supported:
+## The following elements are supported:
 
 Resistors: 
 RXX N1 N2 VALUE
@@ -19,7 +19,8 @@ Independent Sources
 VXX N+ N- VALUE
 IXX N+ N- VALUE
 
-Not yet implemented:
+### Not yet implemented:
+
 Linear Voltage-Controlled Current Sources
 GXX N+ N- NC+ NC- VALUE
 VALUE is the transconductance (in mhos).

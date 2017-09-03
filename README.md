@@ -17,6 +17,7 @@ N+ and N- are the positive and negative element nodes, respectively. VALUE is th
 
 Independent Sources
 VXX N+ N- VALUE
+
 IXX N+ N- VALUE
 
 ## Not yet implemented:

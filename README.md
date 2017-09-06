@@ -1,56 +1,17 @@
 # Node-Analysis
-This notebook contains some python code to read a netlist formatted similar to a SPICE file and generate the node equations.  Nodal analysis is described [here](https://en.wikipedia.org/wiki/Modified_nodal_analysis).  Follows Erik Cheever's Analysis of  Resistive Circuits [page](http://www.swarthmore.edu/NatSci/echeeve1/Ref/mna/MNA1.html) to generate modified nodal equations.  I somewhat followed his matlab file.  
+This project is about an ipython notebook to generate network equations.
 
-## The following elements are supported:
+**Synopsis:** This notebook will read in a spice like circuit netlist file and compute the network equations. These equations can then be copied to a different notebook where the node voltages can be solved using the power of sympy or numpy.
 
-Resistors: 
-RXX N1 N2 VALUE
-N1 and N2 are the two element nodes. VALUE is the resistance (in ohms) and may be positive or negative but not zero.
+**Description:** This node analysis code started as a translation from some C code to generate a nodal admittance matrix that I had written in 1988.  The original C code worked well and calculated numeric solutions.  I then started writing some C code to generate the matrices with symbolic values and then intended to use LISP to symbolically solve the equations.  I didn’t get too far with this effort.  The LISP code would generate huge symbolic strings with no simplification.  The output was a big pile of trash that was not in the least bit useful or decipherable.  
 
-Capacitors
-CXX N+ N- VALUE
-N+ and N- are the positive and negative element nodes, respectively. VALUE is the capacitance in Farads.
+In 2014, I started to use python for my little coding projects and engineering calculations.  There are some nice python libraries for numeric and symbolic calculations (such as numpy and sympy), so I decided to try writing a python script to generate the node equations based on the old C code I had written many years before.  Part way into this project I discovered that there is a new nodal analysis technique being taught today in engineering school called the modified nodal analysis (1,2).  The modified nodal analysis provides an algorithmic method for generating systems of independent equations for linear circuit analysis.  Some of my younger colleagues at work were taught this method, but I never heard of it until a short time ago.  These days, I never really analyze a circuit by hand, unless it’s so simple that you can almost do it by inspection.  Most problems that an electrical engineer encounters on the job are complex enough that they use computers to analyze the circuits.  LTspice is the version of spice that I use, since it’s free and does a good job converging when analyzing switching circuits.  
 
-Inductors
-LXX N+ N- VALUE
-N+ and N- are the positive and negative element nodes, respectively. VALUE is the inductance in Henries.
+The code follows Erik Cheever's Analysis of  Resistive Circuits [page](http://www.swarthmore.edu/NatSci/echeeve1/Ref/mna/MNA1.html) to generate modified nodal equations. I somewhat followed his matlab file for resistors, capacitors, opamps and independent sources.  The preprocessor and parser code was converted from my old C code.  The use of pandas for a data frame is new and sympy is used to do the math.
 
-Independent Sources
-VXX N+ N- VALUE
+After doing some verification testing with inductors and capacitors, it seems that inductors are not being treated correctly.  According to some research, inductor stamp affects the B,C and D arrays.  Erik Cheever's code puts inductors into the G matrix as 1/s/L.  LTspice results are different than the python code.  Capacitors seem to work OK.
 
-IXX N+ N- VALUE
-
-## Not yet implemented:
-
-Linear Voltage-Controlled Current Sources
-GXX N+ N- NC+ NC- VALUE
-VALUE is the transconductance (in mhos).
-
-Voltage-Controlled Voltage Sources
-EXX N+ N- NC+ NC- VALUE
-VALUE is the voltage gain.
-
-Linear Current-Controlled Current Sources
-FXX N+ N- VNAM VALUE
-VNAM is the name of a voltage source through which the controlling current flows. The direction of positive controlling current flow is from the positive node, through the source, to the negative node of VNAM. VALUE is the current gain.
-
-Linear Current-Controlled Voltage Sources
-HXX N+ N- VNAM VALUE
-VNAM is the name of a voltage source through which the controlling current flows. 
-VALUE is the transresistance (in ohms).
-
-Coupled (Mutual) Inductors (not currently supported)
-KXX LYY LZZ VALUE
-LYY and LZZ are the names of the two coupled inductors.
-VALUE is the coefficient of coupling, K, which must be in the range −1 ≤ K ≤ +1. Using the 'dot' convention, place a 'dot' on the first node of each inductor.
-
-Negative impedance converter
-From Wikipedia, the free encyclopedia
-The negative impedance converter (NIC) is a one-port op-amp circuit acting as a negative load which injects energy into circuits in contrast to an ordinary load that consumes energy from them. This is achieved by adding or subtracting excessive varying voltage in series to the voltage drop across an equivalent positive impedance. This reverses the voltage polarity or the current direction of the port and introduces a phase shift of 180° (inversion) between the voltage and the current for any signal generator. The two versions obtained are accordingly a negative impedance converter with voltage inversion (VNIC) and a negative impedance converter with current inversion (INIC). The basic circuit of an INIC and its analysis is shown below.
-
-Gyrator
-From Wikipedia, the free encyclopedia
-A gyrator is a passive, linear, lossless, two-port electrical network element proposed in 1948 by Bernard D. H. Tellegen as a hypothetical fifth linear element after the resistor, capacitor, inductor and ideal transformer.[1] Unlike the four conventional elements, the gyrator is non-reciprocal. Gyrators permit network realizations of two-(or-more)-port devices which cannot be realized with just the conventional four elements. In particular, gyrators make possible network realizations of isolators and circulators.[2] Gyrators do not however change the range of one-port devices that can be realized. Although the gyrator was conceived as a fifth linear element, its adoption makes both the ideal transformer and either the capacitor or inductor redundant. Thus the number of necessary linear elements is in fact reduced to three. Circuits that function as gyrators can be built with transistors and op amps using feedback.
-
-OpAmp
+References:
+1) The modified nodal approach to network analysis, Chung-Wen Ho, A. Ruehli, P. Brennan, IEEE Transactions on Circuits and Systems ( Volume: 22, Issue: 6, Jun 1975 )
+2) https://en.wikipedia.org/wiki/Modified_nodal_analysis
 

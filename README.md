@@ -12,6 +12,6 @@ The code follows Erik Cheever's Analysis of  Resistive Circuits [page](http://ww
 After doing some verification testing with inductors and capacitors, it seems that inductors are not being treated correctly.  According to some research, inductor stamp affects the B,C and D arrays.  Erik Cheever's code puts inductors into the G matrix as 1/s/L.  LTspice results are different than the python code.  Capacitors seem to work OK.
 
 References:
-1) The modified nodal approach to network analysis, Chung-Wen Ho, A. Ruehli, P. Brennan, IEEE Transactions on Circuits and Systems ( Volume: 22, Issue: 6, Jun 1975 )
-2) https://en.wikipedia.org/wiki/Modified_nodal_analysis
+1. The modified nodal approach to network analysis, Chung-Wen Ho, A. Ruehli, P. Brennan, IEEE Transactions on Circuits and Systems ( Volume: 22, Issue: 6, Jun 1975 )
+2. https://en.wikipedia.org/wiki/Modified_nodal_analysis
 

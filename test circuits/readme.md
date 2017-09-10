@@ -1,2 +1,5 @@
-test circuits readme
-this folder has various test circuits used to verify the code.
+test circuits
+
+I'm going to put various test circuits used to validate the code here.  
+
+

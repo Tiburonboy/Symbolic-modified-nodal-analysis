@@ -1,7 +1,7 @@
 # Node-Analysis
 This project is about an ipython notebook to generate network equations.
 
-**Synopsis:** This notebook will read in a spice like circuit netlist file and compute the network equations. These equations can then be copied to a different notebook where the node voltages can be solved using the power of sympy or numpy.
+**Abstract:** This notebook will read in a spice like circuit netlist file and compute the network equations. These equations can then be copied to a different notebook where the node voltages can be solved using the power of sympy or numpy.
 
 **Description:** This node analysis code started as a translation from some C code to generate a nodal admittance matrix that I had written in 1988.  The original C code worked well and calculated numeric solutions.  I then started writing some C code to generate the matrices with symbolic values and then intended to use LISP to symbolically solve the equations.  I didn’t get too far with this effort.  The LISP code would generate huge symbolic strings with no simplification.  The output was a big pile of trash that was not in the least bit useful or decipherable.  
 

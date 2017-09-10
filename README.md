@@ -15,3 +15,7 @@ References:
 1. The modified nodal approach to network analysis, Chung-Wen Ho, A. Ruehli, P. Brennan, IEEE Transactions on Circuits and Systems ( Volume: 22, Issue: 6, Jun 1975 )
 2. https://en.wikipedia.org/wiki/Modified_nodal_analysis
 
+
+### Folders
+1. backup: backup files
+2. test circuits

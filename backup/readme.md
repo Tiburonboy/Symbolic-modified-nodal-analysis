@@ -1,4 +1,5 @@
-Backup History
+#### Backup History
+A collection of file backups made during the code development.  I usually try to remember to make a backup whenever I get someting working or have made a lot of changes.  Sometimes the backups are just restore points in case I need to back track for some reason. For example the way the inductors were being treated by Eric is different, so this ended up being a point where I made a backup before ditching his code.
 
 | filename | description |
 |:---------|:------------|
@@ -8,3 +9,4 @@ Backup History
 | node analysis_9-3-2017.ipynb | Added code to remove spice directives.  Fixed orientation of current sources in I matrix.  N2 is the arrow end of the current source. |
 | node analysis_9-5-2017a.ipynb | After doing some verification testing with inductors and capacitors, it seems that inductors are not being treated correctly.  According to some research, inductor stamp affects the B,C and D arrays.  Erik Cheever's code puts inductors into the G matrix as 1/s/L.  LTspice results are different than the python code generated network equations.  Capacitors seem to work OK. |
 | node analysis_9-10-2017x.ipynb | Updating the code for the B matrix, saving off work in progress. x = a, b, c, ... |
+| node analysis_9-11-2017.ipynb | Saving off work in progress. Created a new data frame for the branches that generate unknown currents.  Still need to give the new functions better names. |

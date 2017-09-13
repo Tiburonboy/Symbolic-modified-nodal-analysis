@@ -10,3 +10,4 @@ A collection of file backups made during the code development.  I usually try to
 | node analysis_9-5-2017a.ipynb | After doing some verification testing with inductors and capacitors, it seems that inductors are not being treated correctly.  According to some research, inductor stamp affects the B,C and D arrays.  Erik Cheever's code puts inductors into the G matrix as 1/s/L.  LTspice results are different than the python code generated network equations.  Capacitors seem to work OK. |
 | node analysis_9-10-2017x.ipynb | Updating the code for the B matrix, saving off work in progress. x = a, b, c, ... |
 | node analysis_9-11-2017.ipynb | Saving off work in progress. Created a new data frame for the branches that generate unknown currents.  Still need to give the new functions better names. |
+| node analysis_9-12-2017.ipynb | Saving off work in progress. |

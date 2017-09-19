@@ -11,4 +11,4 @@ A collection of file backups made during the code development.  I usually try to
 | node analysis_9-10-2017x.ipynb | Updating the code for the B matrix, saving off work in progress. x = a, b, c, ... |
 | node analysis_9-11-2017.ipynb | Saving off work in progress. Created a new data frame for the branches that generate unknown currents.  Still need to give the new functions better names. |
 | node analysis_9-12-2017.ipynb | Saving off work in progress. |
-| node analysis_9-18-2017.ipynb | still debugging B matrix, looks like we don't need find_vname() or df2.  This is because a zero volt voltage source is add to the next list in spice. Needed to add cccs type to the list of i_unks. Filled out some B matrices by hand and got the same answer as the code. Need to work on the C matrix next. |
+| node analysis_9-18-2017.ipynb | Debugging B matrix, looks like we don't need find_vname() or df2.  This is because a zero volt voltage source is add to the next list in spice. Needed to add cccs type to the list of i_unks. Filled out some B matrices by hand and got the same answer as the code. Need to work on the C matrix next. |

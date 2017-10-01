@@ -13,3 +13,4 @@ A collection of file backups made during the code development.  I usually try to
 | node analysis_9-12-2017.ipynb | Saving off work in progress. |
 | node analysis_9-18-2017.ipynb | Debugging B matrix, looks like we don't need find_vname() or df2.  This is because a zero volt voltage source is add to the net list in spice. Needed to add cccs type to the list of i_unks. Filled out some B matrices by hand and got the same answer as the code. Need to work on the C matrix next. |
 | node analysis_9-30-2017ab.ipynb | debugging B, C & D matrices, vcvs is a E type element and sympy didn't like it, fixed problem in parser by changing the lable E to Ea.  Also changed the E maxtrix name to Ev.  Code seems to run, just need to verify it.  Need to find a new name for func1. |
+| node analysis_10-1-2017a.ipynb | Cleaning up comments and notes. |

@@ -15,5 +15,4 @@ A collection of file backups made during the code development.  I usually try to
 | node analysis_9-30-2017ab.ipynb | debugging B, C & D matrices, vcvs is a E type element and sympy didn't like it, fixed problem in parser by changing the lable E to Ea.  Also changed the E maxtrix name to Ev.  Code seems to run, just need to verify it.  Need to find a new name for func1. |
 | node analysis_10-1-2017a.ipynb | Cleaning up comments and notes. |
 | node analysis_10-4-2017.ipynb | Fixed incrementing of sn in D matrix.  D matrix needs to count all i_unks.  In find_vnam() fixed col_num to return just the row number in df2. |
-| node analysis_10-5-2017.ipynb | Fixed E type in matrix C.  Added cccs to i_unk count.  Fixed E type in D.
-need to look at the equations next, they don't look correct.|
+| node analysis_10-5-2017.ipynb | Fixed E type in matrix C.  Added cccs to i_unk count.  Fixed E type in D. need to look at the equations next, they don't look correct.|

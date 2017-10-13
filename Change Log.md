@@ -1,5 +1,5 @@
 # Change Log
-Symbolic modified nodal analysis
+Symbolic modified nodal analysis  
 Last update: 10/13/2017
 
 Date started: April 17, 2017  

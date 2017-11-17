@@ -38,7 +38,7 @@ For example, a resistor named R1 connected between nodes 1 and 2 with a value of
 R1 2 4 3000  
 Spice supports other parameters, but these are not allowed in this python implementation.
 
-**Coupled inductors:**
+**Coupled inductors:**  
 Coupled inductors are not implemented at this time.
 Two coupled inductors are described by the following line.  
 KXX LYY LZZ VALUE  

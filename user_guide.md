@@ -99,5 +99,5 @@ The output of the opamp is a voltage source. Two input terminals are at the same
 Notes: The two ideal op-amp assumptions (no input current, no potential difference at inputs) only hold for circuits with negative feedback.  Because of this, the MNA method as applied here can give erroneous results if negative feedback is not present. Need to work on implementing a better opamp model.  
 
 **Example circuit:**  
-Follow the link [here]() and [here]() for an example of using the python code with an LTspice schematic.  
+Follow the link [here](https://github.com/Tiburonboy/Node-Analysis/blob/master/Example48.pdf) and [here]() for an example of using the python code with an LTspice schematic.  
 

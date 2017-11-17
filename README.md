@@ -73,3 +73,9 @@ Add a link to github for the user's guide.
  
 [Revision history](https://github.com/Tiburonboy/Node-Analysis/blob/master/Rev%20History.md)
 
+**License:**  This work (includes python code, documentation, test circuits, etc.) is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.  
+Share — copy and redistribute the material in any medium or format  
+Adapt — remix, transform, and build upon the material for any purpose, even commercially.  
+https://creativecommons.org/licenses/by-sa/4.0/  
+
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />

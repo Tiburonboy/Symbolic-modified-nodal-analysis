@@ -49,5 +49,5 @@ Updates to the comments. Verifying equations with hand generated KCL equations. 
 10/9/2017  
 Still verifying code.  Fixed F type in C.  Still need to verify op amps, inductors and capacitors.
 11/19/2017
-Fixing some documentation
+Fixing some documentation.
 

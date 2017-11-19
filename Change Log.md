@@ -48,6 +48,7 @@ Fixed E type in matrix C.  Added cccs to i_unk count.  Fixed E type in D.  Fixed
 Updates to the comments. Verifying equations with hand generated KCL equations.  Fixed H type in D.  
 10/9/2017  
 Still verifying code.  Fixed F type in C.  Still need to verify op amps, inductors and capacitors.
+
 11/19/2017
 Fixing some documentation.
 

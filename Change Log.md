@@ -51,3 +51,4 @@ Still verifying code.  Fixed F type in C.  Still need to verify op amps, inducto
 11/19/2017
 Fixing some documentation.
 
+end of list

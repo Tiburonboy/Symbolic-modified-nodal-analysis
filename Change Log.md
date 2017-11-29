@@ -1,6 +1,6 @@
 # Change Log
 Symbolic modified nodal analysis  
-Last update: 10/13/2017
+Last update: see last entry below for date of last update.
 
 Date started: April 17, 2017  
 file name: node analysis.ipynb  

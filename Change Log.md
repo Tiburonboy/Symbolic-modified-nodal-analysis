@@ -50,8 +50,8 @@ Updates to the comments. Verifying equations with hand generated KCL equations. 
 Still verifying code.  Fixed F type in C.  Still need to verify op amps, inductors and capacitors.
 11/19/2017
 Fixing some documentation.  
-11/30/2017
-Fixing C matric for op amps, one test case ran OK
+11/30/2017  
+Fixing C matric for op amps, one test case ran OK  
 References use in the debugging of the opamp stamp:  
 Design of Analog Circuits Through Symbolic Analysis edited by Mourad Fakhfakh, Esteban Tlelo-Cuautle, Francisco V. Fernández  
 Computer Aided Design and Design Automation edited by Wai-Kai Chen  

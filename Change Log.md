@@ -48,8 +48,13 @@ Fixed E type in matrix C.  Added cccs to i_unk count.  Fixed E type in D.  Fixed
 Updates to the comments. Verifying equations with hand generated KCL equations.  Fixed H type in D.  
 10/9/2017  
 Still verifying code.  Fixed F type in C.  Still need to verify op amps, inductors and capacitors.
-
 11/19/2017
 Fixing some documentation.
+11/30/2017
+Fixing C matric for op amps
+References use in the debugging of the opamp stamp:  
+Design of Analog Circuits Through Symbolic Analysis edited by Mourad Fakhfakh, Esteban Tlelo-Cuautle, Francisco V. Fernández  
+Computer Aided Design and Design Automation edited by Wai-Kai Chen  
+http://users.ecs.soton.ac.uk/mz/CctSim/chap1_4.htm
 
 end of list

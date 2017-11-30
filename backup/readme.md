@@ -18,3 +18,4 @@ A collection of file backups made during the code development.  I usually try to
 | node analysis_10-5-2017 & a.ipynb | Fixed E type in matrix C.  Added cccs to i_unk count.  Fixed E type in D. need to look at the equations next, they don't look correct.|
 | node analysis_10-8-2017.ipynb | Still verifing code.  Fixed F type in C. Still need to verify op amps, inductors and capacitors. |
 | node analysis_11-19-2017.ipynb | Up dating documentation |
+| node analysis_11-30-2017.ipynb | Fixed C matrix for opamps, ran one test case, worked OK |

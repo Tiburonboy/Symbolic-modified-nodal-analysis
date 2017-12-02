@@ -56,5 +56,6 @@ References use in the debugging of the opamp stamp:
 Design of Analog Circuits Through Symbolic Analysis edited by Mourad Fakhfakh, Esteban Tlelo-Cuautle, Francisco V. Fernández  
 Computer Aided Design and Design Automation edited by Wai-Kai Chen  
 http://users.ecs.soton.ac.uk/mz/CctSim/chap1_4.htm
-
+12/2/2017  
+Added code for coupled inductors, not tested yet.  
 end of list

@@ -18,11 +18,10 @@ The preprocessor performs the following steps:
 The element types that are supported are resistors, capacitors, inductors, independent sources and controlled sources. Each line in the netlist file contains a circuit element.
 
 The format for the element description is  
-<letter><name> <n1> <n2> ...[mname] [parvals]  
+letter/name n1 n2 value
 Where  
-<letter> signifies the element type, i.e. R, L, C, V, I, O, E, F, G, H or K 
-<name> is a string of letters or numbers that uniquely identify the element
- <...> must be present and [...] is optional.
+letter signifies the element type, i.e. R, L, C, V, I, O, E, F, G, H or K  
+name is a string of letters or numbers that uniquely identify the element.
 
 The element types are described in the following sections.  
 

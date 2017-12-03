@@ -66,7 +66,7 @@ VALUE = the value of the DC current
 
 **Controlled sources:**  
 The voltage-controlled dependent sources are defined using statements of the form  
-<letter><name> <nout+> <nout-> <nc+> <nc-> <gain>  
+G/EXX nout+ nout- nc+ nc- gain  
 where E is a voltage-controlled voltage source, G is a voltage-controlled current source, the
 output voltage is connected between nodes nout+ and nout-, and the control voltage is
 measured at node nc+ with respect to node nc-.  
@@ -77,18 +77,11 @@ G1 2 1 5 8 50 defines a current source connected between node 2 (the + node)
 and node 1 and supplying a current 50 *(v5 − v8).
 
 The current-controlled dependent sources are defined by statements of the form  
-<letter><name> <nout+> <nout-> <vcontrol> <gain>   
-where F is a current-controlled current source, H is a current-controlled voltage source, and the
-output current source is connected between nodes nout+ and nout-, with positive current
-flowing through the source from node nout+ to nout-. The control current flows from the
-positive node of the source vcontrol through the source and out the negative node.
+F/HXX nout+ nout- vcontrol gain   
+where F is a current-controlled current source, H is a current-controlled voltage source, and the output current source is connected between nodes nout+ and nout-, with positive current flowing through the source from node nout+ to nout-. The control current flows from the positive node of the source vcontrol through the source and out the negative node.  
 Examples:  
-Fds 11 9 Vsens 1.25 defines a current source connected from node 11 to node 9
-that generates a current 1.25 times the current flowing through the source Vsens.
-H1 30 20 V5 100 defines a voltage source connected from node 30 to node 20 and
-supplying a voltage 100 times the current through the source V5.
-It is frequently necessary to add a voltage source with value 0 V to the circuit to sense
-the control current for these sources.
+Fds 11 9 Vsens 1.25 defines a current source connected from node 11 to node 9 that generates a current 1.25 times the current flowing through the source Vsens.
+H1 30 20 V5 100 defines a voltage source connected from node 30 to node 20 and supplying a voltage 100 times the current through the source V5.  It is frequently necessary to add a voltage source with value 0 V to the circuit to sense the control current for these sources.
 
 The direction of positive controlling current flow is from the positive node, through the source, to the negative node of VNAM. VALUE is the current gain. 
 

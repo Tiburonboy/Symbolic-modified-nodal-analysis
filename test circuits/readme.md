@@ -1,5 +1,4 @@
-test circuits
+## Circuit Analysis Test Vectors  
+Last updated: 4 Dec 2017
 
-I'm going to put various test circuits used to validate the code in this folder.  
-
-
+This filter contains the test vectors used to validate the network analysis code.  

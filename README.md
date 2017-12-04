@@ -85,6 +85,7 @@ Maple is a mathematical package and there is an application [notes](https://www.
 [SAPWIN](http://www.ewh.ieee.org/soc/es/May2001/12/Begin.htm) is a windows program package for symbolic and numerical simulation of analog circuits.
 
 [Lcapy](https://github.com/mph-/lcapy) is an experimental Python package for teaching linear circuit analysis. It uses SymPy for symbolic mathematics. 
+
 **License:**  This work (includes python code, documentation, test circuits, etc.) is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.  
 Share — copy and redistribute the material in any medium or format  
 Adapt — remix, transform, and build upon the material for any purpose, even commercially.  

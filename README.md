@@ -1,8 +1,8 @@
 # Symbolic modified nodal analysis
-Last update: 11/17/2017  
+Last update: 12/6/2017  
 See backup [folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/backup) for last update.  
 
-**Abstract:** The python code in this notebook will read in a spice like circuit netlist file and formulate a set of network equations in symbolic form using sympy. These equations can then be copied to a different notebook where the node voltages can be numerically solved using sympy or numpy.  Linear resistors, capacitors, inductors, independent sources and controlled sources are supported.
+**Abstract:** The python code in this [notebook](https://cocalc.com/projects/715a4699-f882-4848-af86-6e5c14f24be2/files/node%20analysis.ipynb?session=default) will read in a spice like circuit netlist file and formulate a set of network equations in symbolic form using sympy. These equations can then be copied to a different notebook where the node voltages can be numerically solved using sympy or numpy.  Linear resistors, capacitors, inductors, independent sources and controlled sources are supported.
 
 **Introduction:** This node analysis code started as a translation from some C code to generate a nodal admittance matrix that I had written in 1988.  I wrote this code for two reasons.  Free versions of Spice for the PC didn't exist at the time and I wanted to use some of the code from the Numerical Recipes in C [[1]](#ref1) Book.  The original C code worked well and calculated numeric solutions.  I then started writing some C code to generate the matrices with symbolic values and then intended to use LISP to symbolically solve the equations.  I didn’t get too far with this effort.  The LISP code would generate huge symbolic strings with no simplification.  The output was a big pile of trash that was not in the least bit useful or decipherable.
 

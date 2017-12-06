@@ -1,11 +1,10 @@
 # Symbolic nodal analysis User’s Guide
-Last update: 10/17/2017
+Last update: 12/6/2017
 
 **Introduction:**  This document describes the netlist of the circuit to be analyzed.  A netlist is text file that contains the connectivity information of the circuit.  A netlist in the input to the analysis code and the output are a set of equations that can be solved for the unknown voltages and currents.  The circuits are described in terms of the components and the connections to the other components.  Netlist can be generated with a text editor or exported from a schematic capture program.  LTspice can be used to draw the schematic and a netlist can be exported to the python code to generate the network equations.
 
 **Netlist file format:**  
-A circuit description in spice, which is called a netlist, consists of a statements
-defining each circuit element and its connection to circuit nodes.  A node is a any point on a circuit where two or more circuit elements meet.  The nodes are numbered from 1 to N in any order and node 0 is the ground node or circuit common.  A ground node is required.  Choose a ground or reference node, which usually is taken to be at a potential of zero volt. All other node voltages constitute n unknowns.  The nodes should be numbered in consecutive order.  Each line in the netlist are either comments, spice directives or circuit elements.  
+A circuit description in spice, which is called a netlist, consists of a statements defining each circuit element and its connection to circuit nodes.  A node is a any point on a circuit where two or more circuit elements meet.  The nodes are numbered from 1 to N in any order and node 0 is the ground node or circuit common.  A ground node is required.  Choose a ground or reference node, which usually is taken to be at a potential of zero volt. All other node voltages constitute n unknowns.  The nodes should be numbered in consecutive order.  Each line in the netlist are either comments, spice directives or circuit elements.  
 
 Spice directives are commands to spice and the first character on the line is a period.  Comment lines start with a * or ;.  The default file extension is ‘.net’.  The python code does some preprocessing of the netlist to check the basic formatting of the netlist is correct.  
 
@@ -38,7 +37,6 @@ R1 2 4 3000
 Spice supports other parameters, but these are not allowed in this python implementation.
 
 **Coupled inductors:**  
-Coupled inductors are not implemented at this time.
 Two coupled inductors are described by the following line.  
 KXX LYY LZZ VALUE  
 The parameters are:  

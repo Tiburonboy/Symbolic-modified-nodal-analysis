@@ -58,4 +58,6 @@ Computer Aided Design and Design Automation edited by Wai-Kai Chen
 http://users.ecs.soton.ac.uk/mz/CctSim/chap1_4.htm  
 12/2/2017  
 Added code for coupled inductors, not tested yet.  
+12/6/2017  
+Testing code for coupled inductors. Changes made to D matrix code. test_circuit_9 seems to give the correct results.  
 end of list

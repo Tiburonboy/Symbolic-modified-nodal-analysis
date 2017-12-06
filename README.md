@@ -1,5 +1,6 @@
 # Symbolic modified nodal analysis
-Last update: 11/17/2017
+Last update: 11/17/2017  
+See backup [folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/backup) for last update.  
 
 **Abstract:** The python code in this notebook will read in a spice like circuit netlist file and formulate a set of network equations in symbolic form using sympy. These equations can then be copied to a different notebook where the node voltages can be numerically solved using sympy or numpy.  Linear resistors, capacitors, inductors, independent sources and controlled sources are supported.
 

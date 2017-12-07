@@ -20,4 +20,4 @@ A collection of file backups made during the code development.  I usually try to
 | node analysis_11-19-2017.ipynb | Updating documentation |
 | node analysis_11-30-2017.ipynb | Fixed C matrix for opamps, ran one test case, worked OK |
 | node analysis_12-2-2017a.ipynb | Updated code for coupled inductors, Matrix D code changed, not tested yet |
-| node analysis_12-6-2017.ipynb | Fixed matric D for coupled inductors.  Limited testing |
+| node analysis_12-6-2017.ipynb | Fixed matrix D for coupled inductors.  Limited testing |

@@ -61,5 +61,6 @@ Added code for coupled inductors, not tested yet.
 12/6/2017  
 Testing code for coupled inductors. Changes made to D matrix code. test_circuit_9 seems to give the correct results.  
 18 Feb 2022  
-Noticed a bug when independent voltage source is last in net list, moving to 1st line in netlist generated what seems like correct equations.  Investigation continues.  For now, ordering the net list with sources first seems to work.  Problem is with generation of the Ev and J matrices. 
+Noticed a bug when independent voltage source is last line in net list, moving to 1st line in netlist generated what seems like correct equations.  Investigation continues.  For now, ordering the net list with sources first seems to work.  Problem is with generation of the Ev and J matrices. 
+
 end of list

@@ -2,6 +2,9 @@
 Last update: 12/6/2017  
 See backup [folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/backup) for last update.  
 
+# >> important note:
+18 Feb 2022: Noticed a bug when the independent voltage source is the last line in the netlist, moving to 1st line in the netlist generated what seems like correct equations. Investigation continues. For now, ordering the net list with independent sources listed first in the net list seems to work. The problem is with generation of the Ev and J matrice
+
 **Abstract:** The python code in this jupyter notebook will read in a spice like circuit netlist file and formulate a set of network equations in symbolic form using sympy. These equations can then be copied to a different notebook where the node voltages can be numerically solved using sympy or numpy.  Linear resistors, capacitors, inductors, independent sources and controlled sources are supported.
 
 **Introduction:** This node analysis code started as a translation from some C code to generate a nodal admittance matrix that I had written in 1988.  I wrote this code for two reasons.  Free versions of Spice for the PC didn't exist at the time and I wanted to use some of the code from the Numerical Recipes in C [[1]](#ref1) Book.  The original C code worked well and calculated numeric solutions.  I then started writing some C code to generate the matrices with symbolic values and then intended to use LISP to symbolically solve the equations.  I didn’t get too far with this effort.  The LISP code would generate huge symbolic strings with no simplification.  The output was a big pile of trash that was not in the least bit useful or decipherable.

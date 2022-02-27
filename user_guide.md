@@ -1,6 +1,9 @@
 # Symbolic nodal analysis User’s Guide
 Last update: 2/27/2022
 
+> **important note:**  
+> 18 Feb 2022: Noticed a bug when the independent voltage source is the last line in the netlist, moving to 1st line in the netlist generated what seems like  correct equations. Investigation continues. For now, ordering the netlist with independent sources listed first in the net list seems to work. The problem is with generation of the Ev and J matrice  
+
 **Introduction:**  This document describes the netlist of the circuit to be analyzed.  A netlist is text file that contains the connectivity information of the circuit.  A netlist in the input to the analysis code and the output are a set of equations that can be solved for the unknown voltages and currents.  The circuits are described in terms of the components and the connections to the other components.  Netlist can be generated with a text editor or exported from a schematic capture program.  LTspice can be used to draw the schematic and a netlist can be exported to the python code to generate the network equations.
 
 **Netlist file format:**  

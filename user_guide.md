@@ -84,8 +84,9 @@ The direction of positive controlling current flow is from the positive node, th
 **Op Amps:**   
 An opamp component is described by the following line.  
 OXX N+ N- Vout
-The output of the opamp is a voltage source. Two input terminals are at the same potential. 
-Notes: The two ideal op-amp assumptions (no input current, no potential difference at inputs) only hold for circuits with negative feedback.  Because of this, the MNA method as applied here can give erroneous results if negative feedback is not present. Need to work on implementing a better opamp model.  
+The output of the opamp is a voltage source. Two input terminals are at the same potential.  
+
+The op amp element is assumed to be an ideal op amp and use of this component is valid only when used in circuits with a DC path (a short or a resistor) from the output terminal to the negative input terminal of the op amp. No error checking is provided and if the condition is violated, the results will be likely erroneous. Need to work on implementing a better opamp model.  
 
 **Example circuit:**  
 Follow the link [here](https://github.com/Tiburonboy/Node-Analysis/blob/master/Example48.pdf) and [here](https://cocalc.com/projects/715a4699-f882-4848-af86-6e5c14f24be2/files/example48.ipynb?session=default) for an example of using the python code with an LTspice schematic.  

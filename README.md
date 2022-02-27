@@ -1,5 +1,5 @@
 # Symbolic modified nodal analysis
-Last update: 2/18/2022  
+Last update: 2/27/2022  
 See backup [folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/backup) for last update.  
 
 > **important note:**  

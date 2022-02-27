@@ -4,7 +4,7 @@ See backup [folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analys
 
 > **important note:**  
 > 18 Feb 2022: Noticed a bug when the independent voltage source is the last line in the netlist, moving to 1st line in the netlist generated what seems like  correct equations. Investigation continues. For now, ordering the netlist with independent sources listed first in the net list seems to work. The problem is with generation of the Ev and J matrice  
-> 26 Feb 2022: Op amp stamp is not woring in some cases. Unity gain feedback seems to work, but other connections don't.   
+> 26 Feb 2022: The op amp element is assumed to be an ideal op amp and use of this component is valid only when used in circuits with a DC path (a short or a resistor) from the output terminal to the negative input terminal of the op amp. No error checking is provided and if the condition is violated, the results will be likely erroneous.   
 
 **Abstract:** The python code in this jupyter notebook will read in a spice like circuit netlist file and formulate a set of network equations in symbolic form using sympy. These equations can then be copied to a different notebook where the node voltages can be numerically solved using sympy or numpy.  Linear resistors, capacitors, inductors, independent sources and controlled sources are supported.
 

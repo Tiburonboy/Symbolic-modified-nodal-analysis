@@ -5,7 +5,7 @@ See backup [folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analys
 > **important notes:**  
 > 18 Feb 2022: Noticed a bug when the independent voltage source is the last line in the netlist, moving to 1st line in the netlist generated what seems like  correct equations. Investigation continues. For now, ordering the netlist with independent sources listed first in the net list seems to work. The problem is with generation of the Ev and J matrice  
 > 26 Feb 2022: The op amp element is assumed to be an ideal op amp and use of this component is valid only when used in circuits with a DC path (a short or a resistor) from the output terminal to the negative input terminal of the op amp. No error checking is provided and if the condition is violated, the results will be likely erroneous.   
-> 14 May 2022: The reference direction for currents needs to be better documented. For now, just be aware that the sign of the current may be opposite than what you might expect.
+> 14 May 2022: The reference direction for currents needs to be better documented. For now, just be aware that the sign of the current may be opposite than what you might expect. Rendering of equations in this readme file fixed.
 
 **Abstract:** The python code in this jupyter notebook will read in a spice like circuit netlist file and formulate a set of network equations in symbolic form using sympy. These equations can then be copied to a different notebook where the node voltages can be numerically solved using sympy or numpy.  Linear resistors, capacitors, inductors, independent sources and controlled sources are supported.
 
@@ -24,14 +24,12 @@ Inductors are being addressed in the D matrix, which is different than the way E
 Equation 1 is the form of  the network equations in matrix form.  
 
 $A\cdot X = Z \tag{1}$
-
-test
-
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+<img src="https://render.githubusercontent.com/render/math?math=A\cdot X = Z \tag{1}">
 
 The A matrix describes the connectivity of the resistors, capacitors and G type (VCCS) circuit elements.  The column vector X are the unknown node voltages and unknown currents terms from the voltage sources and inductors.  The column vector Z is made of the known voltages and currents.  The A is formed by four sub matrices, G, B, C and D, which are described below.
 
 $A = \begin{bmatrix}G B\\C D\end{bmatrix}$
+<img src="https://render.githubusercontent.com/render/math?math=A = \begin{bmatrix}G B\\C D\end{bmatrix}">
 
 The matrix G is formed from the coefficients representing the KCL equations for each node.
 The positive diagonal of G$_{k,k}$ are the conductance terms of the resistor and capacitor elements connected to node k.  The off diagonal terms of G$_{k,j}$ are the resistors and capacitor conductances connecting node k to node j.  G type elements (VCCS) have input to the G matrix at the connection and controlling node positions.
@@ -44,15 +42,18 @@ The D matrix describes also connectivity of the unknown currents.  The D matrix 
 
 The X vector is comprised of the V and J vectors as shown below.   
 $X = \begin{bmatrix}V\\J\end{bmatrix}$  
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 The V vector contains the node voltages which are the voltage unknowns to be solved for.  The J vector contains the unknown currents from each voltage source.
 
 The Z vector is comprised of the I and Ev vectors as shown below.  
 $Z = \begin{bmatrix}I\\Ev\end{bmatrix}$  
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 The I vector contains the known currents and the Ev vector contains the known voltages.  Ev is used because sympy uses e and E sometimes for the constant 2.71, sometimes called Euler's number [[9]](#ref9).
 
 Putting all the parts together:
 
 $\begin{bmatrix}G B\\C D\end{bmatrix} \cdot \begin{bmatrix}V\\J\end{bmatrix} = \begin{bmatrix}I\\Ev\end{bmatrix}$
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
 **Stamps:** Stamps are templates for modifying the B, C and D matrices and facilitate the construction of the matrices. The stamps used in this implementation of the MNA follow the stamps of reference [[7]](#ref7).  
 
@@ -65,6 +66,7 @@ Matrix formulation: Each of the matrices and vectors are generated.
 
 Circuit equation generation:  The circuit equations are generated in a for loop.  Sympy automatically does some simplification according to its default settings.  Two for loops perform the matrix multiplication on the equation.  
 $A\cdot X = Z \tag{2})$
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
 **Code validation:**  The python code was verified by several test circuits and comparing the results to LTspice.  A collection of worked circuits can be found in reference [[7]](#ref7).  See the revision history below for an indication of validation performed so far.  Other test circuits can be found in reference [[10]](#ref10).
 

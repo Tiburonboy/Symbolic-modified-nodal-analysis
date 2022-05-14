@@ -30,7 +30,7 @@ The A matrix describes the connectivity of the resistors, capacitors and G type 
 <img src="https://render.githubusercontent.com/render/math?math=A = \begin{bmatrix}G B\\C D\end{bmatrix}">  
 
 The matrix G is formed from the coefficients representing the KCL equations for each node.
-The positive diagonal of G$_{k,k}$ are the conductance terms of the resistor and capacitor elements connected to node k.  The off diagonal terms of G$_{k,j}$ are the resistors and capacitor conductances connecting node k to node j.  G type elements (VCCS) have input to the G matrix at the connection and controlling node positions.
+The positive diagonal of <img src="https://render.githubusercontent.com/render/math?math=G_{k,k}"> are the conductance terms of the resistor and capacitor elements connected to node k.  The off diagonal terms of <img src="https://render.githubusercontent.com/render/math?math=G_{k,j}"> are the resistors and capacitor conductances connecting node k to node j.  G type elements (VCCS) have input to the G matrix at the connection and controlling node positions.
 
 The B matrix describes the connectivity of the unknown branch currents.  Independent voltage sources, opamps, H, F and E type elements as well as inductors have inputs to the B matrix.
 

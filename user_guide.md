@@ -93,5 +93,5 @@ The output of the opamp is a voltage source. Two input terminals are at the same
 The op amp element is assumed to be an ideal op amp and use of this component is valid only when used in circuits with a DC path (a short or a resistor) from the output terminal to the negative input terminal of the op amp. No error checking is provided and if the condition is violated, the results will be likely erroneous. Need to work on implementing a better opamp model.  
 
 **Example circuit:**  
-Follow the link [here](https://github.com/Tiburonboy/Node-Analysis/blob/master/Example48.pdf) and [here](https://cocalc.com/projects/715a4699-f882-4848-af86-6e5c14f24be2/files/example48.ipynb?session=default) for an example of using the python code with an LTspice schematic.  
+Follow the link [here](https://github.com/Tiburonboy/Node-Analysis/blob/master/Example48.pdf) and [here](https://nbviewer.org/github/Tiburonboy/Symbolic-modified-nodal-analysis/blob/master/test%20circuits/example48-1.ipynb) for an example of using the python code with an LTspice schematic.  
 

@@ -1,13 +1,8 @@
 # Symbolic modified nodal analysis
 Last update: 2/27/2022  
-See backup [folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/backup) for last update.  
+See backup [folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/backup) for past versions.  
 
-> **important notes:**  
-> 18 Feb 2022: Noticed a bug when the independent voltage source is the last line in the netlist, moving to 1st line in the netlist generated what seems like  correct equations. Investigation continues. For now, ordering the netlist with independent sources listed first in the net list seems to work. The problem is with generation of the Ev and J matrice  
-> 26 Feb 2022: The op amp element is assumed to be an ideal op amp and use of this component is valid only when used in circuits with a DC path (a short or a resistor) from the output terminal to the negative input terminal of the op amp. No error checking is provided and if the condition is violated, the results will be likely erroneous.   
-> 14 May 2022: The reference direction for currents needs to be better documented. For now, just be aware that the sign of the current may be opposite than what you might expect. Rendering of equations in this readme file fixed.
-> 
-> 10/6/2023  New version of Sympy does not support non-Expr objects in a Matrix. Code to generate the circuit equations towards the end of the notebook produces an error. This line generates an error:  equ[i] = Eq(eq_temp,Z[i]). Fix has not been implemented.
+> Maintenance – This project is not actively maintained, but I do use the code from time to time. The biggest issue has been deprecated SymPy functions. Since I’m in the mode not upgrading or updating Anaconda, I don’t encounter too many issues with deprecation of features. Usually at the end of the long term support period for whatever version of Linux that I have installed, is when I update Anaconda along with the Python libraries. This is when these type of issues pop up. See the backup folder for the version history.
 
 **Abstract:** The python code in this jupyter notebook will read in a spice like circuit netlist file and formulate a set of network equations in symbolic form using sympy. These equations can then be copied to a different notebook where the node voltages can be numerically solved using sympy or numpy.  Linear resistors, capacitors, inductors, independent sources and controlled sources are supported.
 
@@ -121,7 +116,7 @@ https://creativecommons.org/licenses/by-sa/4.0/
 <a id='ref9'></a>
 1. [e (mathematical constant)](https://en.wikipedia.org/wiki/E_(mathematical_constant)), Wikipedia.com, retrieved October 8, 2017
 <a id='ref10'></a>
-1. Solved Problems, A Source of Free Solved Problems,[Category Archives: Electrical Circuits](http://www.solved-problems.com/circuits/electrical-circuits-problems/716/supernode-dependent-voltage-source/), retrieved October 6, 2017
+1. Solved Problems, A Source of Free Solved Problems,[Category Archives: Electrical Circuits](http://www.solved-problems.com/circuits/electrical-circuits-problems/716/supernode-dependent-voltage-source/), retrieved October 6, 2017 - as of 13 Nov 2023 this link is no good.
 <a id='ref11'></a>
 1. [MATLAB](https://www.mathworks.com/products/matlab.html), retrieved October 6, 2017
 <a id='ref12'></a>

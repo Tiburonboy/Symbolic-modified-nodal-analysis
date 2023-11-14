@@ -22,3 +22,4 @@ A collection of file backups made during the code development.  I usually try to
 | node analysis_12-2-2017a.ipynb | Updated code for coupled inductors, Matrix D code changed, not tested yet |
 | node analysis_12-6-2017.ipynb | Fixed matrix D for coupled inductors.  Limited testing |
 | node analysis_2-18-2022.ipynb | Noticed a bug when the independent voltage source is the last line in the netlist, moving to 1st line in the netlist generated what seems like correct equations. Investigation continues. For now, ordering the net list with independent sources listed first in the net list seems to work. The problem is with generation of the Ev and J matrices. Made some grammer and spelling corrections. |
+| node analysis_11-14-2023.ipynb | Various updates and code testing. Fixed  |

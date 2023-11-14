@@ -1,4 +1,4 @@
-test circuit 1
+test circuit 1  
 number of branches: 9  
 number of nodes: 5  
 number of unknown currents: 4  

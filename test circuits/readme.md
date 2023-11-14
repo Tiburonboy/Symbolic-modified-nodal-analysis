@@ -1,15 +1,9 @@
-## Circuit Analysis Test Vectors  
-Last updated: 4 Dec 2017
+## Validation Test Circuits 
+Last updated: 14 Nov 2023
 
-This folder contains the test vectors used to validate the network analysis code.  This is a work in progress.  
-For now test circuits are in the zip file.  
-
-Test vectors
+Working on updates to this folder.
 
 
-| Test file name | Description | Status |
-|:---------------|-------------|--------|
-| test_circuit_1 | sample text | almost done |
 
 
 

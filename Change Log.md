@@ -62,5 +62,7 @@ Added code for coupled inductors, not tested yet.
 Testing code for coupled inductors. Changes made to D matrix code. test_circuit_9 seems to give the correct results.  
 18 Feb 2022  
 Noticed a bug when independent voltage source is last line in net list, moving to 1st line in netlist generated what seems like correct equations.  Investigation continues.  For now, ordering the net list with sources first seems to work. Problem is with generation of the Ev and J matrices. In this version, I corrected some grammer and spelling errors.
+11/14/2023  
+New version of Sympy does not support non-Expr objects in a Matrix. Code to generate the circuit equations towards the end of the notebook produced an error. This line generated the error:  $equ[i] = Eq(eq_temp,Z[i])$. See the note [here](https://docs.sympy.org/latest/explanation/active-deprecations.html#deprecated-non-expr-in-matrix) for details. In SymPy 1.8 and earlier versions it was possible to put non-Expr elements in a Matrix and the matrix elements could be any arbitrary Python object. Corrections have been made in this notebook. At the time of dubugging this issue, I'm running sympy.__version__  = '1.11.1'  
 
 end of list

@@ -12,5 +12,5 @@ The table below lists the test circuits used to validate and test the code. Each
 | test_1.asc | Resistors, independent and dependent sources | Solution for DC operating point  |
 | test_2.asc | Resistors and independent sources | Solution for DC operating point |
 | test_3.asc | RLC circuit with independent and dependent sources | AC analysis |
-| test_X | sample | sample |
+| test_X | I have about 10 more test circuits still in progress | NA |
 

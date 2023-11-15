@@ -1,0 +1,30 @@
+* C:\users\jeff32\My Documents\Solving Electrical Engineering Problems with Python Blog\MNA Test Circuits\test_4\test_4.asc
+V4 1 2 10
+I2 3 4 5
+F1 5 9 V1 5
+E1 12 3 10 1 3
+G1 7 10 9 4 2
+H1 2 12 V2 2
+R3 5 1 10
+R4 3 7 1
+R5 4 8 5
+R9 1 9 9
+R1 1 5 3
+R10 8 0 10
+R13 9 11 7
+R14 10 9 10
+R15 0 11 3
+R2 3 5 5
+R6 7 1 2
+R7 8 7 6
+R11 10 9 5
+R12 0 10 9
+R16 12 11 10
+R8 3 8 5
+R17 2 6 8
+V1 6 3 0
+V2 13 5 0
+R18 12 13 4
+.op
+.backanno
+.end

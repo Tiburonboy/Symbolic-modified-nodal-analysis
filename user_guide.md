@@ -92,6 +92,11 @@ The output of the opamp is a voltage source. Two input terminals are at the same
 
 The op amp element is assumed to be an ideal op amp and use of this component is valid only when used in circuits with a DC path (a short or a resistor) from the output terminal to the negative input terminal of the op amp. No error checking is provided and if the condition is violated, the results will be likely erroneous. Need to work on implementing a better opamp model.  
 
-**Example circuit:**  
-Follow the link [here](https://github.com/Tiburonboy/Node-Analysis/blob/master/Example48.pdf) and [here](https://nbviewer.org/github/Tiburonboy/Symbolic-modified-nodal-analysis/blob/master/test%20circuits/example48-1.ipynb) for an example of using the python code with an LTspice schematic.  
-
+Example procedure:  
+1. Draw the circuit to be analyzed in LTSpice or some other schematic capture program. Label the nodes.
+2. Export the netlist of the circuit and convert component values to units of Ohms, Farads and Henrys. Use scientific notation, for example, replace component values such as 2k with 2e3 and 2u with 2e-6.
+3. Change Op Amp reference designators, for example U1 to O1 (capitol letter O, not zero). 
+4. Voltage sources and current sources need to be fixed. See test circuits and problem circuits for examples.
+5. Modify the nodal analysis Jupyter notebook code to read the net list. Run all the cells in the notebook.
+6. Copy the symbol list, the A, X and Z matrices, and the element values in dictionary format to a new notebook. See end of the nodal analysis Jupyter notebook where these items are displayed.
+7. Follow the test and problem circuits for examples of how to do additional circuit analysis.

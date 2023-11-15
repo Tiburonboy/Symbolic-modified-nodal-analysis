@@ -69,7 +69,7 @@ Code verification often looks at requirements or specifications versus what was 
 The backup history can also be found on github.
 [Backups](https://github.com/Tiburonboy/Node-Analysis/tree/master/backup)
 
-**Survey of other symbolic circuit analysis code:**  The python code presented in this notebook is somewhat unique since python is open source, free and runs op a variety of platforms, the code presented in this ipython notebook is portable.  As described below, this code is made available under a public domain licence and archived in a github repository.  
+**Survey of other symbolic circuit analysis code:**  The python code presented in this notebook is somewhat unique since python is open source, free and runs on a variety of platforms, the code presented in this ipython notebook is portable.  As described below, this code is made available under a public domain licence and archived in a github repository.  
 
 There are other symbolic circuit analysis codes available and some of these are described here.  Some of these codes are based on commercial software such as MATLAB [[11]](#ref11), TINA  [[12]](#ref12) and Maple [[13]](#ref13).  
 

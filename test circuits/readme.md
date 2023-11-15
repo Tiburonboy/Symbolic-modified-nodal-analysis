@@ -14,3 +14,14 @@ The table below lists the test circuits used to validate and test the code. Each
 | test_3.asc | RLC circuit with independent and dependent sources | AC analysis |
 | test_X | I have about 10 more test circuits still in progress | NA |
 
+The following file types are in each folder:
+
+| file name | Description |
+|:---------------|-------------|
+| test_1.asc | LTSpice circuit schematic |
+| readme.md | a description of the circuit |
+| test_1.ipynb | Jupyter notebook |
+| test_1.net | Spice net list |	
+| test_1.png | image of the schematic for display in the notebook |
+| test_3.csv | csv data exported from LTSpice |
+

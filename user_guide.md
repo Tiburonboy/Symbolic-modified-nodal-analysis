@@ -99,4 +99,4 @@ Example procedure:
 4. Voltage sources and current sources need to be fixed. See test circuits and problem circuits for examples.
 5. Modify the nodal analysis Jupyter notebook code to read the net list. Run all the cells in the notebook.
 6. Copy the symbol list, the A, X and Z matrices, and the element values in dictionary format to a new notebook. See end of the nodal analysis Jupyter notebook where these items are displayed.
-7. Follow the test and problem circuits for examples of how to do additional circuit analysis.
+7. Follow the test and problem circuits for examples on how to do additional circuit analysis.

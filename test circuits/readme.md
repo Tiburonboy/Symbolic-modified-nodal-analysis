@@ -9,10 +9,10 @@ The table below lists the test circuits used to validate and test the code. Each
 
 | Test file | Circuit Description | notes |
 |:---------------|-------------|--------|
-| test_1.asc | Resistors, independent and dependent sources | DC operating point  |
-| test_2.asc | Resistors and independent sources | DC operating point |
+| test_1.asc | Resistors, independent and dependent sources | DC analysis |
+| test_2.asc | Resistors and independent sources | DC analysis |
 | test_3.asc | RLC circuit with independent and dependent sources | AC analysis |
-| test_4.asc | AC analysis, same circuit as test_1, but with R2 replaced with C2 and R3 replaced with L1. AC solution at 1 rad/s. AC frequency sweep from 0.01 Hz to 1 Hz. | AC analysis |
+| test_4.asc | Same circuit as test_1, but with R2 replaced with C2 and R3 replaced with L1. | AC analysis |
 | test_X | I have 13 test circuits, write ups still in progress | NA |
 
 The following file types are in each folder:

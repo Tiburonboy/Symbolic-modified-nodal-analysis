@@ -1,5 +1,4 @@
-Test circuit number 4
-
+# Test circuit 4
 number of lines in netlist: 26  
 number of branches: 26  
 number of nodes: 13  
@@ -15,3 +14,4 @@ number of F - CCCS: 1
 number of H - CCVS: 1  
 number of K - Coupled inductors: 0  
 
+<img src="test_4.png" width="700"> 

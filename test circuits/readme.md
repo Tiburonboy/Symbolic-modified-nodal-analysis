@@ -11,8 +11,8 @@ The table below lists the test circuits used to validate and test the code. Each
 |:---------------|-------------|--------|
 | test_1.asc | Resistors, independent and dependent sources | DC analysis |
 | test_2.asc | Resistors and independent sources | DC analysis |
-| test_3.asc | RLC circuit with independent and dependent sources | AC analysis |
-| test_4.asc | Same circuit as test_1, but with R2 replaced with C2 and R3 replaced with L1. | AC analysis |
+| test_3.asc | Same circuit as test_1, but with R2 replaced with C2 and R3 replaced with L1. | AC analysis |
+| test_4.asc | Resistors and one of each type of source | AC analysis |
 | test_X | I have 13 test circuits, write ups still in progress | NA |
 
 The following file types are in each folder:

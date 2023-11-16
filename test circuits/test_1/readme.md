@@ -7,3 +7,6 @@ number of independent voltage sources: 2
 number of independent current sources: 1  
 number of E - VCVS: 1  
 number of F - CCCS: 1  
+
+<img src="test_1.png" width="700"> 
+

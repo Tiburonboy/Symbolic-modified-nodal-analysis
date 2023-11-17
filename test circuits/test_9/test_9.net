@@ -1,0 +1,8 @@
+* C:\users\jeff32\My Documents\Solving Electrical Engineering Problems with Python Blog\MNA Test Circuits\test_9\test_9.asc
+G1 0 1 1 0 0.6
+I1 0 1 10
+G2 1 0 1 0 0.8
+R1 1 0 100Meg
+.op
+.backanno
+.end

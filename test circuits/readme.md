@@ -18,6 +18,9 @@ $\large{\color {red} {\text{I still need to check spelling and grammer in the ju
 | test_5.asc | RLC and one of each type of source | AC analysis |
 | test_6.asc | RLC, coupled inductors and one of each type of source | AC analysis |
 | test_7.asc | Large circuit and two or more of each element type w/o Op Amps | AC analysis |
+| test_8.asc | Test_7 w/ op amps included | AC analysis |
+| test_9.asc | Current sources only dependent and independent | DC analysis |
+| test_10.asc | Current and voltage sources only, no LRCs | DC analysis |
 | test_X | I have 13 test circuits, write ups still in progress | NA |
 
 The following file types are in each folder:

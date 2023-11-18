@@ -47,8 +47,6 @@ The orientation of the inductors is determined by the first node, which is consi
 ```math
 M = k\sqrt{L_1L_2}
 ```
-<img src="https://render.githubusercontent.com/render/math?math=M = k\sqrt{L_1L_2}">
-
 **Independent sources:**  
 A voltage source is described by the following line.  
 VXX N+ N- VALUE  

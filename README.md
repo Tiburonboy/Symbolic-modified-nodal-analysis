@@ -29,11 +29,11 @@ The A matrix describes the connectivity of the resistors, capacitors and G type 
 <!-- <img src="https://render.githubusercontent.com/render/math?math=A = \begin{bmatrix}G B\\C D\end{bmatrix}">   -->
 $A = \begin{bmatrix}G B\\C D\end{bmatrix}$
 
-$M = \begin{bmatrix}
+M = \begin{bmatrix}
        \frac{5}{6} & \frac{1}{6} & 0           \\[0.3em]
        \frac{5}{6} & 0           & \frac{1}{6} \\[0.3em]
        0           & \frac{5}{6} & \frac{1}{6}
-     \end{bmatrix}$
+     \end{bmatrix}
 
 
 The matrix G is formed from the coefficients representing the KCL equations for each node.

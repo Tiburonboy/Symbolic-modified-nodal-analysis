@@ -23,6 +23,8 @@ Equation 1 is the form of  the network equations in matrix form.
 
 <img src="https://render.githubusercontent.com/render/math?math=A\cdot X = Z \tag{1}">  
 
+$A\cdot X = Z$  
+
 The A matrix describes the connectivity of the resistors, capacitors and G type (VCCS) circuit elements.  The column vector X are the unknown node voltages and unknown currents terms from the voltage sources and inductors.  The column vector Z is made of the known voltages and currents.  The A is formed by four sub matrices, G, B, C and D, which are described below.
 
 <img src="https://render.githubusercontent.com/render/math?math=A = \begin{bmatrix}G B\\C D\end{bmatrix}">  

@@ -29,6 +29,13 @@ The A matrix describes the connectivity of the resistors, capacitors and G type 
 <!-- <img src="https://render.githubusercontent.com/render/math?math=A = \begin{bmatrix}G B\\C D\end{bmatrix}">   -->
 $A = \begin{bmatrix}G B\\C D\end{bmatrix}$
 
+$M = \begin{bmatrix}
+       \frac{5}{6} & \frac{1}{6} & 0           \\[0.3em]
+       \frac{5}{6} & 0           & \frac{1}{6} \\[0.3em]
+       0           & \frac{5}{6} & \frac{1}{6}
+     \end{bmatrix}$
+
+
 The matrix G is formed from the coefficients representing the KCL equations for each node.
 The positive diagonal of $G_{k,k}$ <img src="https://render.githubusercontent.com/render/math?math=G_{k,k}"> are the conductance terms of the resistor and capacitor elements connected to node k.  The off diagonal terms of $G_{k,j}$ <img src="https://render.githubusercontent.com/render/math?math=G_{k,j}"> are the resistors and capacitor conductances connecting node k to node j.  G type elements (VCCS) have input to the G matrix at the connection and controlling node positions.
 
@@ -46,7 +53,7 @@ The V vector contains the node voltages which are the voltage unknowns to be sol
 The Z vector is comprised of the I and Ev vectors as shown below.  
 $Z = \begin{bmatrix}I\\Ev\end{bmatrix}$  
 <img src="https://render.githubusercontent.com/render/math?math=Z = \begin{bmatrix}I\\Ev\end{bmatrix}">  
-The I vector contains the known currents and the Ev vector contains the known voltages.  Ev is used because sympy uses e and E sometimes for the constant 2.71, sometimes called Euler's number [[9]](#ref9).
+The I vector contains the known currents and the Ev vector contains the known voltages.  Ev is used because sympy uses e and E sometimes for the constant 2.71, sometimes called Euler's number [[9]](#ref9). The use of E or e as a symbol was causing some errors when the code was run.  
 
 Putting all the parts together:
 

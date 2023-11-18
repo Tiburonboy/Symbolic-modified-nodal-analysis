@@ -20,17 +20,17 @@ Inductors are being addressed in the D matrix, which is different than the way E
 **Network equations:** The network equations are a set of independent equations expressed in this code in matrix form.  There is an equation for each node based on Kirchhoff's current law (KCL) [[8]](#ref8) and an equation for each current unknown.   The current unknowns are the currents from the voltages sources, op amps, voltage controlled voltage sources, current controlled voltage sources, current controlled current sources and inductors.
 
 Equation 1 is the form of  the network equations in matrix form.  
-<!--
-<img src="https://render.githubusercontent.com/render/math?math=A\cdot X = Z \tag{1}">  
--->
+
+<!-- <img src="https://render.githubusercontent.com/render/math?math=A\cdot X = Z \tag{1}">  -->
 $A\cdot X = Z$  
 
 The A matrix describes the connectivity of the resistors, capacitors and G type (VCCS) circuit elements.  The column vector X are the unknown node voltages and unknown currents terms from the voltage sources and inductors.  The column vector Z is made of the known voltages and currents.  The A is formed by four sub matrices, G, B, C and D, which are described below.
 
-<img src="https://render.githubusercontent.com/render/math?math=A = \begin{bmatrix}G B\\C D\end{bmatrix}">  
+<!-- <img src="https://render.githubusercontent.com/render/math?math=A = \begin{bmatrix}G B\\C D\end{bmatrix}">   -->
+$A = \begin{bmatrix}G B\\C D\end{bmatrix}$
 
 The matrix G is formed from the coefficients representing the KCL equations for each node.
-The positive diagonal of <img src="https://render.githubusercontent.com/render/math?math=G_{k,k}"> are the conductance terms of the resistor and capacitor elements connected to node k.  The off diagonal terms of <img src="https://render.githubusercontent.com/render/math?math=G_{k,j}"> are the resistors and capacitor conductances connecting node k to node j.  G type elements (VCCS) have input to the G matrix at the connection and controlling node positions.
+The positive diagonal of $G_{k,k}$ <img src="https://render.githubusercontent.com/render/math?math=G_{k,k}"> are the conductance terms of the resistor and capacitor elements connected to node k.  The off diagonal terms of $G_{k,j}$ <img src="https://render.githubusercontent.com/render/math?math=G_{k,j}"> are the resistors and capacitor conductances connecting node k to node j.  G type elements (VCCS) have input to the G matrix at the connection and controlling node positions.
 
 The B matrix describes the connectivity of the unknown branch currents.  Independent voltage sources, opamps, H, F and E type elements as well as inductors have inputs to the B matrix.
 
@@ -39,15 +39,18 @@ The C matrix describes the connectivity of the unknown branch currents and is ma
 The D matrix describes also connectivity of the unknown currents.  The D matrix is composed of zeros unless there are controlled sources and inductors in the network.
 
 The X vector is comprised of the V and J vectors as shown below.   
+$X = \begin{bmatrix}V\\J\end{bmatrix}$  
 <img src="https://render.githubusercontent.com/render/math?math=X = \begin{bmatrix}V\\J\end{bmatrix}">  
 The V vector contains the node voltages which are the voltage unknowns to be solved for.  The J vector contains the unknown currents from each voltage source.
 
 The Z vector is comprised of the I and Ev vectors as shown below.  
+$Z = \begin{bmatrix}I\\Ev\end{bmatrix}$  
 <img src="https://render.githubusercontent.com/render/math?math=Z = \begin{bmatrix}I\\Ev\end{bmatrix}">  
 The I vector contains the known currents and the Ev vector contains the known voltages.  Ev is used because sympy uses e and E sometimes for the constant 2.71, sometimes called Euler's number [[9]](#ref9).
 
 Putting all the parts together:
 
+$\begin{bmatrix}G B\\C D\end{bmatrix} \cdot \begin{bmatrix}V\\J\end{bmatrix} = \begin{bmatrix}I\\Ev\end{bmatrix}$
 <img src="https://render.githubusercontent.com/render/math?math=\begin{bmatrix}G B\\C D\end{bmatrix} \cdot \begin{bmatrix}V\\J\end{bmatrix} = \begin{bmatrix}I\\Ev\end{bmatrix}">  
 
 **Stamps:** Stamps are templates for modifying the B, C and D matrices and facilitate the construction of the matrices. The stamps used in this implementation of the MNA follow the stamps of reference [[7]](#ref7).  

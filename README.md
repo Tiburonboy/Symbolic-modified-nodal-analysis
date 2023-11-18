@@ -3,6 +3,9 @@ Last update: 14 Nov 2023
 Current version of the Symbolic modified nodal analysis Jupyter notebook is in the main folder [here](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/blob/master/node%20analysis.ipynb) and should have a last update date of 14 Nov 2023.  
 See [backup folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/backup) for past versions.  
 
+> [!WARNING]
+> Noticed a bug when independent voltage source is last line in net list, moving to 1st line in netlist generated what seems like correct equations. Investigation continues. For now, ordering the net list with sources first seems to work. Problem is with generation of the Ev and J matrices.
+
 **Maintenance:** This project is not actively maintained, but I do use the code from time to time. The biggest issue has been deprecated SymPy functions. Since I’m in the mode not upgrading or updating Anaconda, I don’t encounter too many issues with deprecation of features. Usually at the end of the long term support period for whatever version of Linux that I have installed, is when I update Anaconda along with the Python libraries. This is when these type of issues pop up. See the backup folder for the version history.
 
 **Abstract:** The python code in this jupyter notebook will read in a spice like circuit netlist file and formulate a set of network equations in symbolic form using sympy. These equations can then be copied to a different notebook where the node voltages can be numerically solved using sympy or numpy.  Linear resistors, capacitors, inductors, independent sources and controlled sources are supported.

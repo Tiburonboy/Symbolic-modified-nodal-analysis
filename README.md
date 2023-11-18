@@ -31,7 +31,7 @@ The A matrix describes the connectivity of the resistors, capacitors and G type 
 
 <!-- <img src="https://render.githubusercontent.com/render/math?math=A = \begin{bmatrix}G B\\C D\end{bmatrix}">   -->
 ```math
-$A = \begin{bmatrix}G B\\C D\end{bmatrix}$
+A = \begin{bmatrix}G B\\C D\end{bmatrix}
 ```
 
 M = \begin{bmatrix}
@@ -52,7 +52,9 @@ The C matrix describes the connectivity of the unknown branch currents and is ma
 The D matrix describes also connectivity of the unknown currents.  The D matrix is composed of zeros unless there are controlled sources and inductors in the network.
 
 The X vector is comprised of the V and J vectors as shown below.   
-$X = \begin{bmatrix}V\\J\end{bmatrix}$  
+```math
+X = \begin{bmatrix}V\\J\end{bmatrix}
+```
 <img src="https://render.githubusercontent.com/render/math?math=X = \begin{bmatrix}V\\J\end{bmatrix}">  
 The V vector contains the node voltages which are the voltage unknowns to be solved for.  The J vector contains the unknown currents from each voltage source.
 

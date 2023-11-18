@@ -23,19 +23,15 @@ Inductors are being addressed in the D matrix, which is different than the way E
 **Network equations:** The network equations are a set of independent equations expressed in this code in matrix form.  There is an equation for each node based on Kirchhoff's current law (KCL) [[8]](#ref8) and an equation for each current unknown.   The current unknowns are the currents from the voltages sources, op amps, voltage controlled voltage sources, current controlled voltage sources, current controlled current sources and inductors.
 
 Equation 1 is the form of the network equations in matrix form.  
-
-<!-- <img src="https://render.githubusercontent.com/render/math?math=A\cdot X = Z \tag{1}">  -->
 ```math
 A\cdot X = Z
 ```
 The A matrix describes the connectivity of the resistors, capacitors and G type (VCCS) circuit elements.  The column vector X are the unknown node voltages and unknown currents terms from the voltage sources and inductors.  The column vector Z is made of the known voltages and currents.  The A is formed by four sub matrices, G, B, C and D, which are described below.
-
-<!-- <img src="https://render.githubusercontent.com/render/math?math=A = \begin{bmatrix}G B\\C D\end{bmatrix}">   -->
 ```math
 A = \begin{bmatrix}G B\\C D\end{bmatrix}
 ```
 The matrix G is formed from the coefficients representing the KCL equations for each node.
-The positive diagonal of $G_{k,k}$ <img src="https://render.githubusercontent.com/render/math?math=G_{k,k}"> are the conductance terms of the resistor and capacitor elements connected to node k.  The off diagonal terms of $G_{k,j}$ <img src="https://render.githubusercontent.com/render/math?math=G_{k,j}"> are the resistors and capacitor conductances connecting node k to node j.  G type elements (VCCS) have input to the G matrix at the connection and controlling node positions.
+The positive diagonal of $G_{k,k}$ are the conductance terms of the resistor and capacitor elements connected to node k.  The off diagonal terms of $G_{k,j}$ are the resistors and capacitor conductances connecting node k to node j.  G type elements (VCCS) have input to the G matrix at the connection and controlling node positions.
 
 The B matrix describes the connectivity of the unknown branch currents.  Independent voltage sources, opamps, H, F and E type elements as well as inductors have inputs to the B matrix.
 
@@ -47,22 +43,18 @@ The X vector is comprised of the V and J vectors as shown below.
 ```math
 X = \begin{bmatrix}V\\J\end{bmatrix}
 ```
-<img src="https://render.githubusercontent.com/render/math?math=X = \begin{bmatrix}V\\J\end{bmatrix}">  
 The V vector contains the node voltages which are the voltage unknowns to be solved for.  The J vector contains the unknown currents from each voltage source.
 
 The Z vector is comprised of the I and Ev vectors as shown below.  
 ```math
 Z = \begin{bmatrix}I\\Ev\end{bmatrix}
 ```
-<img src="https://render.githubusercontent.com/render/math?math=Z = \begin{bmatrix}I\\Ev\end{bmatrix}">  
 The I vector contains the known currents and the Ev vector contains the known voltages.  Ev is used because sympy uses e and E sometimes for the constant 2.71, sometimes called Euler's number [[9]](#ref9). The use of E or e as a symbol was causing some errors when the code was run.  
 
 Putting all the parts together:
 ```math
 \begin{bmatrix}G B\\C D\end{bmatrix} \cdot \begin{bmatrix}V\\J\end{bmatrix} = \begin{bmatrix}I\\Ev\end{bmatrix}
 ```
-<img src="https://render.githubusercontent.com/render/math?math=\begin{bmatrix}G B\\C D\end{bmatrix} \cdot \begin{bmatrix}V\\J\end{bmatrix} = \begin{bmatrix}I\\Ev\end{bmatrix}">  
-
 **Stamps:** Stamps are templates for modifying the B, C and D matrices and facilitate the construction of the matrices. The stamps used in this implementation of the MNA follow the stamps of reference [[7]](#ref7).  
 
 **Code description:**  The code is divided in the following sections.  
@@ -74,7 +66,6 @@ Matrix formulation: Each of the matrices and vectors are generated.
 
 Circuit equation generation: The circuit equations are generated in a for loop. Sympy automatically does some simplification according to its default settings. Two for loops perform the matrix multiplication on the equation.  
 $A\cdot X = Z$
-<img src="https://render.githubusercontent.com/render/math?math=A\cdot X = Z \tag{2}">   
 
 **Code validation:**  Basic validation of the code consisted of analyzing simple networks and examining the results. A more comprehensive evaluation of the code was performed by solving test circuits and comparing the results to LTSpice. As of October 2023 all the element types have been tested. See the circuits used for validation [here](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/test%20circuits). The validation circuits range from simple to large and complex. The largest validation circuit consist of 32 nodes, 59 branches and multiple instances all of the element types. For this large test circuit, there are small numerical differences between the Python modified nodal analysis (MNA) code results and the LTSpice solution, which are describe in the test report. Additionally, various interesting problem circuits have been solved using the MNA code and comparing the results to LTSpice. These problem circuits can also be found in the github repository. 
 Code verification often looks at requirements or specifications versus what was implemented. This project didn’t have a formal set of requirements, only a general goal of implementing symbolic MNA using the Python libraries. No formal software or code verification is included.

@@ -4,7 +4,7 @@ Current version of the Symbolic modified nodal analysis Jupyter notebook is in t
 See [backup folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/backup) for past versions.  
 
 > [!NOTE]
-> Equation rendering is not working
+> Equation rendering is not working. Some equations work, but the \begin{bmatrix} doesn't seem to work any more. Adding some example equations for debugging. Ignore these for now.
 
 **Maintenance:** This project is not actively maintained, but I do use the code from time to time. The biggest issue has been deprecated SymPy functions. Since I’m in the mode not upgrading or updating Anaconda, I don’t encounter too many issues with deprecation of features. Usually at the end of the long term support period for whatever version of Linux that I have installed, is when I update Anaconda along with the Python libraries. This is when these type of issues pop up. See the backup folder for the version history.
 
@@ -30,7 +30,9 @@ $A\cdot X = Z$
 The A matrix describes the connectivity of the resistors, capacitors and G type (VCCS) circuit elements.  The column vector X are the unknown node voltages and unknown currents terms from the voltage sources and inductors.  The column vector Z is made of the known voltages and currents.  The A is formed by four sub matrices, G, B, C and D, which are described below.
 
 <!-- <img src="https://render.githubusercontent.com/render/math?math=A = \begin{bmatrix}G B\\C D\end{bmatrix}">   -->
+```math
 $A = \begin{bmatrix}G B\\C D\end{bmatrix}$
+```
 
 M = \begin{bmatrix}
        \frac{5}{6} & \frac{1}{6} & 0           \\[0.3em]
@@ -38,6 +40,7 @@ M = \begin{bmatrix}
        0           & \frac{5}{6} & \frac{1}{6}
      \end{bmatrix}
 
+$\sqrt{3x-1}+(1+x)^2$
 
 The matrix G is formed from the coefficients representing the KCL equations for each node.
 The positive diagonal of $G_{k,k}$ <img src="https://render.githubusercontent.com/render/math?math=G_{k,k}"> are the conductance terms of the resistor and capacitor elements connected to node k.  The off diagonal terms of $G_{k,j}$ <img src="https://render.githubusercontent.com/render/math?math=G_{k,j}"> are the resistors and capacitor conductances connecting node k to node j.  G type elements (VCCS) have input to the G matrix at the connection and controlling node positions.

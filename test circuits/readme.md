@@ -33,7 +33,8 @@ The table below lists the test circuits used to validate and test the code. Each
 | test_12.asc | LC ladder low pass filter | report in progress |
 | test_13.asc | Ring of current sources and inductors | failed validation test |
 
-$\large{\color {red} {\text{18 Nov 2023: Test circuits 11 and 13 failed validation tests; failure analysis inprogress, see folder for description. Spelling and grammer of the jupyter notebooks has not been completed}}}$  
+$\large{\color {red} {\text{18 Nov 2023: Test circuits 11 and 13 failed validation tests; failure analysis inprogress, see folder for description.}}}$
+$\large{\color {red} {\text{Spelling and grammer of the jupyter notebooks has not been completed}}}$  
 
 The following file types are in each folder:
 

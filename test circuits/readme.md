@@ -3,7 +3,7 @@ Last updated: 14 Nov 2023
 
 This folder contains the test circuits used to validate the network analysis code. The code was validated under the following enviroment:  
 | environment | version |
-|:---|---|
+|:---|:---|
 | processor| x86_64 |
 | distribution| Linux Mint 21.1 | 
 | python | 3.10.9 |

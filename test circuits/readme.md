@@ -1,7 +1,16 @@
 ## Validation Test Circuits  
 Last updated: 14 Nov 2023
 
-This folder contains the test circuits used to validate the network analysis code.   
+This folder contains the test circuits used to validate the network analysis code. The code was validated under the following enviroment:  
+| environment | version |
+|:---|---|
+| processor| x86_64 |
+| distribution| Linux Mint 21.1 | 
+| python | 3.10.9 |
+| numpy | 1.23.5 |
+| sympy | 1.11.1 |
+| scipy | 1.10.0 |
+| matplotlib | 3.7.0 |
 
 Basic validation of the code consisted of analyzing simple networks and examining the results. A more comprehensive evaluation of the code was performed by solving test circuits and comparing the results to LTSpice. As of October 2023 all the element types have been tested. The validation circuits range from simple to large and complex. The largest validation circuit consist of 32 nodes, 59 branches and multiple instances all of the element types. For this large test circuit, there are small numerical differences between the Python MNA code results and the LTSpice solution, which are describe in the JupyterLab notebooks.
 

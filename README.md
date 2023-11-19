@@ -1,6 +1,6 @@
 # Symbolic modified nodal analysis
 Last update: 14 Nov 2023  
-Current version of the Symbolic modified nodal analysis Jupyter notebook is in the main folder [here](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/blob/master/node%20analysis.ipynb) and should have a last update date of 14 Nov 2023.  
+Current version of the Symbolic modified nodal analysis Jupyter notebook is in the main folder [here](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/blob/master/node%20analysis.ipynb) and should have a last update date of 14 Nov 2023. See test circuit folder for versions of OS, Numpy etc. being used.   
 See [backup folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/backup) for past versions.  
 
 > [!WARNING]

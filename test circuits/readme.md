@@ -7,8 +7,6 @@ Basic validation of the code consisted of analyzing simple networks and examinin
 
 The table below lists the test circuits used to validate and test the code. Each test circuit has it’s own folder with the support files. The test circuits are a collection of problems from text books or large and complex circuits that I made up that include various elements or unique combinations of elements or topologies. In LTSpice the series resistance for inductors defaults to 1e-3 Ohms unless set to zero. Leaving the default series inductance at 1e-3 Ohms will cause small numerical differences in the solution obtained by LTSpice.
 
-$\large{\color {red} {\text{I still need to check spelling and grammer in the jupyter notebooks}}}$  
-
 | Test file | Circuit Description | notes |
 |:---------------|-------------|--------|
 | test_1.asc | Resistors, independent and dependent sources | DC analysis |
@@ -25,7 +23,8 @@ $\large{\color {red} {\text{I still need to check spelling and grammer in the ju
 | test_12.asc | LC ladder low pass filter | report in progress |
 | test_13.asc | Ring of current sources and inductors | failed validation test |
 
-18 Nov 2023: Test circuits 11 and 13 failed validation tests. Corrective action is in progress.
+$\large{\color {red} {\text{18 Nov 2023: Test circuits 11 and 13 failed validation tests. Corrective action is in progress.}}}$  
+$\large{\color {red} {\text{I still need to check spelling and grammer in the jupyter notebooks}}}$  
 
 The following file types are in each folder:
 

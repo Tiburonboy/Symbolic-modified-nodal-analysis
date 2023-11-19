@@ -21,9 +21,11 @@ $\large{\color {red} {\text{I still need to check spelling and grammer in the ju
 | test_8.asc | Test_7 w/ op amps included | AC analysis |
 | test_9.asc | Current sources only dependent and independent | DC analysis |
 | test_10.asc | Current and voltage sources only, no LRCs | DC analysis |
-| test_11 | TBD | NA |
-| test_12 | TBD | NA |
-| test_13 | TBD | NA |
+| test_11.asc | Three coupled inductors | failed validation test |
+| test_12.asc | LC ladder low pass filter | report in progress |
+| test_13.asc | Ring of current sources and inductors | failed validation test |
+
+18 Nov 2023: Test circuits 11 and 13 failed validation tests. Corrective action is in progress.
 
 The following file types are in each folder:
 

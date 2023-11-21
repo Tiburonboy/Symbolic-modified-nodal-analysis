@@ -30,7 +30,7 @@ The table below lists the test circuits used to validate and test the code. Each
 | test_9.asc | Current sources only dependent and independent | DC analysis |
 | test_10.asc | Current and voltage sources only, no LRCs | DC analysis |
 | test_11.asc | Three coupled inductors | failed validation test |
-| test_12.asc | LC ladder low pass filter | report in progress |
+| test_12.asc | LC ladder low pass filter | AC analysis |
 | test_13.asc | Ring of current sources and inductors | AC analysis |
 
 $\large{\color {red} {\text{18 Nov 2023: Test circuit 11 failed validation test; failure analysis inprogress, see folder for description.}}}$

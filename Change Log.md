@@ -67,5 +67,6 @@ New version of Sympy does not support non-Expr objects in a Matrix. Code to gene
 29 Nov 2023  
 Problem - When the D matrix is built, independent voltage sources are processed in the data frame order when building the D matrix. If the voltage source followed element L, H, F, K types in the netlist, a row was inserted that put the voltage source in a different row in relation to its position in the Ev matrix. This would cause the node attached to the terminal of the voltage source to be zero volts.
 Solution - added code to move voltage source types to the beginning of the net list dataframe before any calculations are performed.  
-
+**1/9/2024**  
+Code for building matrix A was not including matrix D if i_unk == 1. The following line of code is new: $A[n,n] = D[0]$ also with a comment. Added verification tests test_14 and test_15 for the case of i_unk == 1 and 0.  
 end of list

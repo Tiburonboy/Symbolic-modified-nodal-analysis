@@ -1,6 +1,4 @@
-# Change Log {#sec-Change-log}
-
-Symbolic modified nodal analysis  
+# Change Log 
 Last update: see last entry below for date of last update.
 
 Updates or changes:  

@@ -19,6 +19,8 @@ to be in the D matrix rather than the G matrix.
 References:
 1. [Analysis of  Resistive Circuits](http://www.swarthmore.edu/NatSci/echeeve1/Ref/mna/MNA1.html), retrieved October 6, 2017  
 2. [ECE 570 Session 3](http://www2.engr.arizona.edu/~ece570/session3.pdf), Computer Aided Engineering for Integrated Circuits, retreived November 13, 2023  
+
+Usage:  See SMNA_func_test.py
 """
 
 from sympy import *

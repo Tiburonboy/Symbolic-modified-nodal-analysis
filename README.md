@@ -1,5 +1,5 @@
 # Symbolic modified nodal analysis
-Last update: 6 Dec 2024  
+Last update: 16 Aug 2025  
 ~~Current version of the Symbolic modified nodal analysis Jupyter notebook is in the main folder [here](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/blob/master/node%20analysis.ipynb) and should have a last update date of 14 Nov 2023. See test circuits folder for versions of OS, Numpy etc. being used. See [backup folder](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/backup) for past versions.~~ 
 
 I'm currently working on a long form manual for this project, see the link [here](https://tiburonboy.github.io/Symbolic-Modified-Nodal-Analysis-using-Python/) for the book/manual or the github [repository](https://github.com/Tiburonboy/Symbolic-Modified-Nodal-Analysis-using-Python). This is where you can find the most current documentation and version of the Python code, along with validation tests and examples. I recommend that you follow the link, since I’m currently devoting my time and effort to updating the documentation contained at the link. At some point, I’ll circle back here and update this repository, as a result, some items here might be out of date.

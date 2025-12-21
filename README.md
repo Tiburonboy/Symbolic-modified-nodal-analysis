@@ -2,7 +2,8 @@
 Last update: 21 Dec 2025  
 
 > [!NOTE]
-> I'm currently working on a long form manual for this project, see the link [here](https://tiburonboy.github.io/Symbolic-Modified-Nodal-Analysis-using-Python/) for the book/manual or the github [repository](https://github.com/Tiburonboy/Symbolic-Modified-Nodal-Analysis-using-Python). This is where you can find the most current documentation and version of the Python code, along with validation tests and examples. I recommend that you follow the link, since I’m currently devoting my time and effort to updating the documentation contained at the link. At some point, I’ll circle back here and update this repository, as a result, some items here might be out of date.
+> I'm currently working on an online book which documents the Python code for this project. 
+Follow the hyperlink: [Symbolic Modified Nodal Analysis using Python](https://tiburonboy.github.io/Symbolic-Modified-Nodal-Analysis-using-Python/) to get to the _Welcome_ page for the book. The GitHub [repository](https://github.com/Tiburonboy/Symbolic-Modified-Nodal-Analysis-using-Python) is where you can find the source code for the book and the current version of the Python code, along with JupyterLab notebooks of validation tests and examples. I recommend that you follow the link, since I’m currently devoting my time and effort to updating the documentation contained at the link. At some point, I’ll circle back here and update this repository, as a result, some items here might be out of date.
 
 ---
 

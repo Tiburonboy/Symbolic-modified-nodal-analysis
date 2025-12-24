@@ -1,1 +1,1 @@
-
+This folder will hold archived versions of the HTML book. Previously, backup copies were held in the repository for the book. They have been moved here to keep the GitHub page repository uncluttered so that eventually git can be used to push updates to the page. 

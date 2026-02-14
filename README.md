@@ -1,7 +1,6 @@
 # Symbolic modified nodal analysis
 
 > [!NOTE]
-> Last update: 14 Jan 2026  
 > I'm currently working on an GitHub pages HTML book which documents the Python code for this project. Follow the link: [Symbolic Modified Nodal Analysis using Python](https://tiburonboy.github.io/Symbolic-Modified-Nodal-Analysis-using-Python/) to get to the _Welcome_ page for the book. I recommend that you follow the link, since I’m currently devoting my time and effort to updating the documentation contained at the link. At some point, I’ll circle back here and update this repository, as a result, some items here might be out of date.
 >
 > The linked GitHub [repository](https://github.com/Tiburonboy/Symbolic-Modified-Nodal-Analysis-using-Python) is where you will find the HTML code for the book. The folder [book_backup](https://github.com/Tiburonboy/Symbolic-modified-nodal-analysis/tree/master/book_backup) contains archived source material for the book, including the JupyterLab notebooks.

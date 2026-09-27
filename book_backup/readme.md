@@ -9,3 +9,4 @@ History of Backups.
 | 12/26/2025 | Backup of files after re-org of book - parts aa & ab. |
 | 1/5/2026 | Backup - parts aa & ab. |
 | 1/14/2026 | Backup - parts aa & ab. |
+| 9/27/2026 | Backup of folder after old and unused files purged. |

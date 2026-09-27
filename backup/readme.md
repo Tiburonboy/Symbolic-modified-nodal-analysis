@@ -1,4 +1,8 @@
 #### Backup History
+
+> [!NOTE]
+> This foder is a collection of old backup files. See the folder Book_backup for newer files.
+
 A collection of file backups made during the code development.  I usually try to remember to make a backup whenever I get someting working or have made a lot of changes.  Sometimes the backups are just restore points in case I need to back track for some reason. For example the way the inductors were being treated by Eric is different, so this ended up being a point where I made a backup before ditching his code.
 
 | filename | description |

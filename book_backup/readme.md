@@ -10,3 +10,4 @@ History of Backups.
 | 1/5/2026 | Backup - parts aa & ab. |
 | 1/14/2026 | Backup - parts aa & ab. |
 | 9/27/2026 | Backup of folder after old and unused files purged. |
+| 11/20/2026 | Updates to Initial Conditions chapter and others. Misc changes. Updated Python Libraries used in project, esp Pandas, which had a major update. |
